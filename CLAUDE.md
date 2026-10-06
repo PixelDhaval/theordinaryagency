@@ -148,3 +148,19 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 - After the feature tests pass, ask the user to run the complete suite with `php artisan test --compact`.
 
 </laravel-boost-guidelines>
+
+## Project Context: The Ordinary Agency
+
+This app is the marketing site for **The Ordinary Agency**, a branding and design studio (services: Branding, Packaging Design, Pitch Deck Design, Social Media Design, Brochure Design, UI/UX Design). Brand: black-and-white only, minimal and elegant, motion/video-driven landing page. Before writing copy, building pages, or touching styling, read the relevant files below — they are the source of truth, not something to re-derive or invent.
+
+### Content & SEO briefs — `content/briefs/*.md`
+
+One file per page (`home.md`, `about.md`, `services.md`, `work.md`, `process.md`, `journal.md`, `contact.md`, plus `services/*.md` for each of the six service pages). Each brief documents search intent, competitor analysis, the winning content outline, meta tags, and internal linking for that page. Read the matching brief before changing a page's structure, headings, or SEO metadata.
+
+### Final page copy — `content/pages/*.md`
+
+Mirrors `content/briefs/` one-to-one and is the **finished, approved copy** to implement in Blade views — not a draft. Each file opens with an HTML comment block giving the meta title, meta description, and URL for that route. Some sections are explicitly marked as placeholders in italics (e.g. "Add 3–6 case studies here," "omit this section entirely until you have genuine, permissioned examples") — treat those as conditional sections to render only once real content exists, never fill them with invented/placeholder content.
+
+### Design system — `design.md`
+
+Project-root design specification covering brand principles, the logo mark (`public/img/logo/` — see the file for the light/dark naming convention, which describes the *background* the file suits, not the mark's own color), the black/white color token system, typography (Instrument Sans, weights 400/500/600 already wired in `vite.config.js`), layout/grid, the motion & video hero system, component specs, and a page-by-page layout mapping to `content/pages/`. Read it before any frontend/CSS work — it defines the `@theme` tokens that belong in `resources/css/app.css` and the motion approach (vanilla JS/CSS only, no new frontend dependencies without approval).
