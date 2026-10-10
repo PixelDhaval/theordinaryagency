@@ -1,0 +1,39 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-D_ipKFSk.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "assets": [
+      "assets/tt-firs-neue-var-Dn294Vxv.woff2",
+      "assets/adam-light-D50lQKfA.woff2",
+      "assets/adam-medium-9eYC9D3P.woff2",
+      "assets/adam-bold-tSvMWd7S.woff2"
+    ]
+  },
+  "resources/fonts/adam-bold.woff2": {
+    "file": "assets/adam-bold-tSvMWd7S.woff2",
+    "src": "resources/fonts/adam-bold.woff2"
+  },
+  "resources/fonts/adam-light.woff2": {
+    "file": "assets/adam-light-D50lQKfA.woff2",
+    "src": "resources/fonts/adam-light.woff2"
+  },
+  "resources/fonts/adam-medium.woff2": {
+    "file": "assets/adam-medium-9eYC9D3P.woff2",
+    "src": "resources/fonts/adam-medium.woff2"
+  },
+  "resources/fonts/tt-firs-neue-var.woff2": {
+    "file": "assets/tt-firs-neue-var-Dn294Vxv.woff2",
+    "src": "resources/fonts/tt-firs-neue-var.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-MgKXPh_D.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
