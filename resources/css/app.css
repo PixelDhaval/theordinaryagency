@@ -3,7 +3,289 @@
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('../fonts/tt-firs-neue-var.woff2') format('woff2-variations'), url('../fonts/tt-firs-neue-var.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adam';
+    src: url('../fonts/adam-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adam';
+    src: url('../fonts/adam-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adam';
+    src: url('../fonts/adam-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'TT Firs Neue', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    /* Adam lacks — ’ “ ” … so it falls back to TT Firs Neue for those glyphs; keep it to short display text. */
+    --font-display: 'Adam', 'TT Firs Neue', ui-sans-serif, system-ui, sans-serif;
+
+    /* Brand — monochrome, softened to cut glare */
+    --color-black: #0a0a0a;
+    --color-white: #f5f5f3;
+    --color-ink: #0a0a0a;
+    --color-paper: #f5f5f3;
+    --color-fg-muted: #6b6b6b;
+    --color-fg-muted-inverse: #9a9a96;
+    --color-border: #d9d9d6;
+    --color-border-inverse: #2a2a2a;
+
+    /* Editorial type scale */
+    --text-mega: clamp(3.5rem, 1rem + 11vw, 13rem);
+    --text-display: clamp(2.75rem, 1.2rem + 6.2vw, 7.5rem);
+    --text-h1: clamp(2.25rem, 1.4rem + 3.4vw, 4.75rem);
+    --text-h2: clamp(1.75rem, 1.3rem + 1.8vw, 3rem);
+    --text-h3: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);
+    --text-eyebrow: 0.75rem;
+
+    --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-elegant: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+    html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    body {
+        background: var(--color-paper);
+        color: var(--color-ink);
+    }
+
+    ::selection {
+        background: var(--color-ink);
+        color: var(--color-paper);
+    }
+
+    :focus-visible {
+        outline: 1px solid currentColor;
+        outline-offset: 4px;
+    }
+
+    a,
+    button,
+    [role='button'] {
+        cursor: pointer;
+    }
+}
+
+/* Loading state — the preloader covers the page while GSAP sets initial states.
+   Without JS the preloader never shows and content is fully visible. */
+html.no-js #preloader {
+    display: none;
+}
+
+html.is-loading,
+html.is-loading body {
+    overflow: hidden;
+}
+
+/* Custom cursor only on fine pointers with motion allowed */
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    html.js.has-cursor,
+    html.js.has-cursor a,
+    html.js.has-cursor button {
+        cursor: none;
+    }
+}
+
+.cursor {
+    display: none;
+}
+
+html.js.has-cursor .cursor {
+    display: flex;
+}
+
+/* Masked line wrappers created by SplitText */
+.line-mask {
+    overflow: clip;
+    padding-bottom: 0.08em;
+    margin-bottom: -0.08em;
+}
+
+/* Display accent — light, wide Adam set against the denser TT Firs Neue headline */
+.accent {
+    font-family: var(--font-display);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+}
+
+/* Adam's space glyph is very wide */
+.accent,
+.font-display {
+    word-spacing: -0.12em;
+}
+
+/* Link underline wipe */
+.link-line {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.link-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.2em;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s var(--ease-expo);
+}
+
+.link-line:hover::after,
+.link-line:focus-visible::after,
+.group:hover .link-line::after,
+.group:focus-visible .link-line::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Rolling text — duplicated label slides up on hover */
+.roll {
+    display: inline-flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.roll > span {
+    display: block;
+    transition: transform 0.6s var(--ease-expo);
+}
+
+.roll > span + span {
+    position: absolute;
+    inset: 0;
+    transform: translateY(105%);
+}
+
+.group:hover .roll > span:first-child,
+.roll:hover > span:first-child {
+    transform: translateY(-105%);
+}
+
+.group:hover .roll > span + span,
+.roll:hover > span + span {
+    transform: translateY(0);
+}
+
+/* Long-form copy (case studies, journal articles) rendered from markdown */
+.prose-agency {
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+.prose-agency > * + * {
+    margin-top: 1.25em;
+}
+
+.prose-agency h2 {
+    margin-top: 2.2em;
+    font-size: var(--text-h2);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.prose-agency h3 {
+    margin-top: 1.8em;
+    font-size: var(--text-h3);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.prose-agency a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+}
+
+.prose-agency ul,
+.prose-agency ol {
+    padding-left: 1.25em;
+}
+
+.prose-agency ul {
+    list-style: disc;
+}
+
+.prose-agency ol {
+    list-style: decimal;
+}
+
+.prose-agency blockquote {
+    border-left: 1px solid currentColor;
+    padding-left: 1.25em;
+    font-size: var(--text-h3);
+}
+
+/* FAQ accordion — native <details>, no JS */
+.faq summary {
+    list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq .faq-icon {
+    transition: rotate 0.5s var(--ease-expo);
+}
+
+.faq[open] .faq-icon {
+    rotate: 45deg;
+}
+
+/* Marquee track */
+.marquee-track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+}
+
+/* Grain overlay */
+.grain {
+    pointer-events: none;
+    position: fixed;
+    inset: -50%;
+    z-index: 60;
+    opacity: 0.045;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

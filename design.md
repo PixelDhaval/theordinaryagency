@@ -22,12 +22,13 @@ Source files (already in repo, do not regenerate):
 
 | File | Size | Use |
 |---|---|---|
-| `public/img/logo/logo-light.png` | 344×329, RGBA | **Black mark** — for light backgrounds (white/off-white sections) |
-| `public/img/logo/logo-dark.png` | 344×329, RGBA | **White mark** — for dark/black backgrounds (hero, footer, dark sections) |
-| `public/img/logo/logo-favicon-light.png` | 344×344, RGBA | Favicon variant, light context |
-| `public/img/logo/logo-favicon-dark.png` | 344×344, RGBA | Favicon variant, dark context |
+| `public/img/logo/logo-light.png` | 1223×329, RGBA | **Black lockup** (ring + "the ordinary agency" wordmark) — for light backgrounds |
+| `public/img/logo/logo-dark.png` | 1223×329, RGBA | **White lockup** — for dark backgrounds, and for the `mix-blend-difference` header |
+| `public/img/logo/logo-mark-dark.png` | 344×329, RGBA | **White ring only**, cropped from the lockup — for places that need the bare mark (preloader) |
+| `public/img/logo/logo-favicon-light.png` | 344×344, RGBA | Favicon tile (black ring on white rounded square) |
+| `public/img/logo/logo-favicon-dark.png` | 344×344, RGBA | Favicon tile (white ring on black rounded square) |
 
-The mark is a single asymmetric ring — an organic, hand-drawn "O." No wordmark is baked into the file, so the logotype in navigation/footer should be set as live text ("The Ordinary Agency") in Instrument Sans next to the mark, not as an image, for crisp rendering and accessibility.
+The mark is a single asymmetric ring — an organic, hand-drawn "O" — locked up with a stacked lowercase wordmark. Use the lockup image as the logotype in the header and footer; never set "The Ordinary Agency" as live text beside it (that duplicates the name). The footer closes with the lockup at full content width as the oversized sign-off.
 
 **Naming convention to remember:** the suffix describes the *background* the file is designed to sit on, not the mark's own color — `-light` is the dark mark for light backgrounds, `-dark` is the light mark for dark backgrounds. Pick the file by the section's background, every time.
 
@@ -47,8 +48,8 @@ Strictly monochrome — no hue anywhere in the UI (photography/video grayscale t
 ```css
 /* resources/css/app.css — extend the existing @theme block */
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'TT Firs Neue', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Adam', 'TT Firs Neue', ui-sans-serif, system-ui, sans-serif;
 
     /* Primitives */
     --color-black: #0a0a0a;      /* true black, slightly softened to reduce OLED smear on video */
@@ -82,27 +83,38 @@ Strictly monochrome — no hue anywhere in the UI (photography/video grayscale t
 
 ## 4. Typography
 
-Instrument Sans is already configured via Bunny Fonts in `vite.config.js` with weights **400, 500, 600** — do not add new weights/files to the font pipeline without approval, since that edits a shared config file. Design within those three weights:
+Two self-hosted families, served from `public/fonts/` (WOFF2 converted from the supplied TTFs; the originals sit alongside them) and declared with `@font-face` in `resources/css/app.css`. No third-party font CDN.
 
-| Role | Weight | Tracking | Notes |
+| Family | Files | Weights | Role |
 |---|---|---|---|
-| Display / H1 | 600 | -0.02em | Sentence case, lowercase-led — matches live copy exactly, e.g. "Branding and design agency for brands that want to stand out." Never set in all-caps. |
-| H2 (section titles) | 600 | -0.01em | e.g. "What we do," "How we work" |
-| H3 (card/service titles) | 500 | 0 | e.g. service names, work card titles |
-| Body | 400 | 0 | Content paragraphs, 1.6 line-height |
-| Small / meta | 400 | 0.01em | Captions, filter tags, dates — paired with `--color-fg-muted` |
-| Link / CTA | 500 | 0 | Always with the arrow glyph already in the copy ("Book a call →") — see §8 for the underline-wipe interaction |
+| **TT Firs Neue** (`font-sans`) | `tt-firs-neue-var.woff2` — variable | any value 100–900 | Primary face: headlines, body, UI, eyebrows. Full glyph set. |
+| **Adam** (`font-display`) | `adam-light.woff2`, `adam-medium.woff2`, `adam-bold.woff2` | 300 / 500 / 700 | Display accent only: the accent word(s) in a headline, big numerals (process steps, preloader counter), the marquee, menu links. Its wide, rounded forms echo the logo wordmark. |
 
-**Scale** (Tailwind v4 `@theme` additions, fluid via `clamp()` so the hero headline scales smoothly instead of jumping at breakpoints):
+> **License — action required before launch.** The supplied `TT Firs Neue Trial Var Roman.ttf` is TypeType's DaFont trial, whose embedded license reads: *"designed for font testing and cannot be used in personal or commercial projects."* Buy the full TT Firs Neue web license and swap the file before the site goes live. The Adam files ship with no embedded license text, so confirm their terms too.
+
+**Glyph gap:** Adam has no `—`, `’`, `“ ”` or `…`. `--font-display` falls back to TT Firs Neue for those characters, so use Adam only for short display text that avoids them. Never use it for paragraphs.
+
+**Neither family has an italic.** Emphasis inside a headline comes from contrast of face and weight, not slant: the main line is set in TT Firs Neue 500 with tight tracking, and the accent words are set in Adam Light through the `.accent` class. For example: "Branding and design agency for brands that want to <span class="accent">stand out</span>". Never apply `italic` (browsers would fake an oblique).
+
+| Role | Face / weight | Tracking | Notes |
+|---|---|---|---|
+| Display / H1 | Firs Neue 500 + `.accent` Adam 300 | -0.045em | Sentence case, lowercase-led — matches live copy exactly. Never all-caps. |
+| H2 (section titles) | Firs Neue 500 + `.accent` | -0.035em | e.g. "Design that’s considered, <span class="accent">not crowded.</span>" |
+| H3 (service/step titles) | Firs Neue 500 | -0.03em | |
+| Body | Firs Neue 400 | 0 | 1.5–1.6 line-height |
+| Eyebrow / meta | Firs Neue 400, uppercase, 0.75rem | 0.25em | Paired with `--color-fg-muted` |
+| Numerals / counters | Adam 300 | — | Process "01–04", preloader 0→100 |
+
+**Scale** (Tailwind v4 `@theme`, fluid via `clamp()`):
 
 ```css
 @theme {
-    --text-display: clamp(2.5rem, 2rem + 2.2vw, 4.5rem);
-    --text-h1: clamp(2rem, 1.7rem + 1.4vw, 3rem);
-    --text-h2: clamp(1.5rem, 1.35rem + 0.7vw, 2rem);
-    --text-h3: 1.25rem;
-    --text-body: 1.0625rem;
-    --text-small: 0.875rem;
+    --text-mega: clamp(3.5rem, 1rem + 11vw, 13rem);
+    --text-display: clamp(2.75rem, 1.2rem + 6.2vw, 7.5rem);
+    --text-h1: clamp(2.25rem, 1.4rem + 3.4vw, 4.75rem);
+    --text-h2: clamp(1.75rem, 1.3rem + 1.8vw, 3rem);
+    --text-h3: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);
+    --text-eyebrow: 0.75rem;
 }
 ```
 
@@ -160,7 +172,7 @@ This is the centerpiece of the brief: a minimal, elegant landing page carried by
 
 ### 6.4 Page transitions
 
-Keep this native and dependency-free: use the browser's View Transitions API (`document.startViewTransition`) for a soft cross-fade between full page loads where supported, with no fallback needed since unsupported browsers simply get an instant navigation (progressive enhancement, zero risk). Do **not** reach for a client-side router or a JS animation library (GSAP, Lenis, Framer Motion) for this — it would mean adding a new frontend dependency, which needs explicit approval first per this project's conventions, and nothing above requires it.
+Keep this native and dependency-free: use the browser's View Transitions API (`document.startViewTransition`) for a soft cross-fade between full page loads where supported, with no fallback needed since unsupported browsers simply get an instant navigation (progressive enhancement, zero risk). Don't add a client-side router for this. Motion across the site uses GSAP (installed and approved): ScrollTrigger, ScrollSmoother and SplitText. Don't add a second animation library (Lenis, Framer Motion) on top of it.
 
 ---
 
@@ -208,7 +220,8 @@ Mapped directly to the finished copy in `content/pages/`, not re-invented:
 
 - Add the `@theme` extensions from §3, §4, and §6.2 directly into `resources/css/app.css` below the existing block — Tailwind v4 is CSS-first, no `tailwind.config.js` to touch.
 - Build views as Blade partials/components under `resources/views/` mirroring the sitemap above (`resources/views/home.blade.php`, `resources/views/services/index.blade.php`, `resources/views/services/show.blade.php`, etc.) with shared `layout`, `nav`, and `footer` components so the dark/light section logic in §3 lives in one place.
-- Motion JS (IntersectionObserver reveal, reduced-motion check, nav crossfade, View Transitions hook) belongs in `resources/js/app.js` as vanilla JS — no new npm dependency is needed for anything specified in §6, and none should be added without approval first.
+- Motion JS lives in `resources/js/` — `lib/gsap.js` registers the plugins once, and each behaviour is its own module in `modules/` (preloader, hero, process, reveals, menu, cursor…), orchestrated by `app.js`. Create pinned ScrollTriggers first, top to bottom, then everything else, so later triggers measure with the pin spacers in place.
+- Icons come from Blade Icons with the Phosphor set (`<x-phosphor-*-thin />`). Use the thin weight to match the light type.
 - Replace the placeholder `public/favicon.ico` using `logo-favicon-dark.png` as the source.
 - `content/pages/*.md` is the copy source of truth — when a page says a section is conditional ("omit until real case studies exist," "omit until you have genuine testimonials"), the Blade view should actually conditionally render it, not ship with placeholder content.
 

@@ -5,7 +5,7 @@
 
 ## Foundational Context
 
-This application is a Laravel application running on PHP 8.5. Always use the APIs that match the installed major version of each package — do not assume a version.
+This application is a Laravel application running on PHP 8.4. Always use the APIs that match the installed major version of each package — do not assume a version.
 
 Before relying on a package's API, confirm its installed version:
 - PHP packages: run `composer show --direct` to list direct dependencies with versions, or `composer show <vendor/package>` for a single package.
@@ -98,6 +98,16 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 - Laravel can be deployed using [Laravel Cloud](https://cloud.laravel.com/), which is the fastest way to deploy and scale production Laravel applications.
 - Activate the `deploying-to-cloud` skill whenever deploying to Laravel Cloud, configuring Cloud environments or resources, using the Cloud CLI, or troubleshooting Cloud deployments.
 
+=== tests rules ===
+
+# Test Enforcement
+
+- Add or update tests for behavior and logic changes when a test provides meaningful regression coverage.
+- Pure copy, styling, and layout-only changes do not require new or updated tests.
+- When test coverage applies, run the affected tests and ensure they pass.
+- Test the changed behavior and its important failure modes, but do not add tests beyond them.
+- Read the `testing-best-practices` skill before writing tests.
+
 === laravel/core rules ===
 
 # Do Things the Laravel Way
@@ -163,4 +173,8 @@ Mirrors `content/briefs/` one-to-one and is the **finished, approved copy** to i
 
 ### Design system — `design.md`
 
-Project-root design specification covering brand principles, the logo mark (`public/img/logo/` — see the file for the light/dark naming convention, which describes the *background* the file suits, not the mark's own color), the black/white color token system, typography (Instrument Sans, weights 400/500/600 already wired in `vite.config.js`), layout/grid, the motion & video hero system, component specs, and a page-by-page layout mapping to `content/pages/`. Read it before any frontend/CSS work — it defines the `@theme` tokens that belong in `resources/css/app.css` and the motion approach (vanilla JS/CSS only, no new frontend dependencies without approval).
+Project-root design specification covering brand principles, the logo mark (`public/img/logo/` — see the file for the light/dark naming convention, which describes the *background* the file suits, not the mark's own color), the black/white color token system, typography (self-hosted TT Firs Neue + Adam in `public/fonts/`, no italics — accents use the `.accent` class; the Firs Neue file is a trial license that must be replaced before launch), layout/grid, the motion system, component specs, and a page-by-page layout mapping to `content/pages/`. Read it before any frontend/CSS work — it defines the `@theme` tokens in `resources/css/app.css` and the motion approach (GSAP modules in `resources/js/modules/`, Phosphor Blade icons).
+
+### Dynamic content — Filament admin (`/admin`)
+
+Work (`Project`), Journal (`Post` + `Category`) and contact-form enquiries (`ContactSubmission`) live in the database and are managed in the Filament v5 panel at `/admin` (resources in `app/Filament/Resources`). Static pages (services, about, process) still come from `content/pages/*.md` and `App\Support\ServiceCatalog`. Posts and projects share SEO override fields via `App\Models\Concerns\HasSeo` and `App\Filament\Schemas\SeoSection`; only records with a past `published_at` appear publicly (`published()` scope). Local sample data comes from `Database\Seeders\SampleContentSeeder` (never seeded in production). Uploaded images use the `public` disk, so `APP_URL` must match the site's domain.

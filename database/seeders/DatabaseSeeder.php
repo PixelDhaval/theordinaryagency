@@ -3,23 +3,28 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    use WithoutModelEvents;
-
     /**
      * Seed the application's database.
+     *
+     * Model events stay enabled so posts get their reading time and categories their slug.
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        if (app()->isProduction()) {
+            $this->command?->warn('Skipping sample data in production. Create your admin with: php artisan make:filament-user');
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+            return;
+        }
+
+        User::firstOrCreate(
+            ['email' => 'admin@theordinaryagency.test'],
+            ['name' => 'Studio Admin', 'password' => 'password', 'email_verified_at' => now()],
+        );
+
+        $this->call(SampleContentSeeder::class);
     }
 }
