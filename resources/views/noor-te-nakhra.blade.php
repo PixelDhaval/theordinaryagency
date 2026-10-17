@@ -1,9 +1,45 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Noor te Nakhra Proposal</title>
+@php
+    $title = 'Noor te Nakhra — Online Store Proposal | The Ordinary Agency';
+    $description = 'Two ways to take Noor te Nakhra online: a fast Shopify store or a fully owned custom store. Compare packages, add-ons, timelines and 3-year costs.';
+    $ogImage = asset(config('agency.og_image'));
+    $canonical = route('noor-te-nakhra');
+@endphp
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#F6F3F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16111B" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="{{ $canonical }}">
+<link rel="icon" href="{{ asset('img/logo/logo-favicon-light.png') }}" sizes="any">
+<link rel="apple-touch-icon" href="{{ asset('img/logo/logo-favicon-light.png') }}">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ config('agency.name') }}">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ $canonical }}">
+<meta property="og:image" content="{{ $ogImage }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Ordinary Agency">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $ogImage }}">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+</head>
+<body>
 <style>
 /* Layout: a single long letter that reconfigures itself — path switch at top, live total pinned to the bottom edge */
 :root{
