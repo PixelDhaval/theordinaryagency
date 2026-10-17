@@ -296,7 +296,7 @@ section{display:flex;flex-direction:column;gap:20px}
     <div class="milestones" id="milestones"></div>
     <ul class="terms">
       <li>All prices are in Indian Rupees.</li>
-      <li>Third-party costs (Shopify membership, apps, domain, hosting) are paid directly by the client. Shopify adds GST to its membership fee.</li>
+      <li>Third-party costs (Shopify membership, apps, domain, hosting) are paid directly by the client. Shopify adds GST to its membership fee. Custom store hosting is free for the first year.</li>
       <li>Product photos, descriptions and prices are provided by the client. We upload up to 100 products.</li>
       <li>Includes 3 rounds of design changes and 3 months of free support after launch.</li>
       <li>Work beyond this scope is quoted separately before it starts.</li>
@@ -374,7 +374,7 @@ function cumulative(path){
     for(let i=1;i<3;i++){ sum += membership(i) + y.apps + fee + y.support; out.push(sum); }
   } else {
     const y = P.custom.yearly;
-    sum = oneTime("custom") + y.hosting; out.push(sum);
+    sum = oneTime("custom"); out.push(sum);
     for(let i=0;i<2;i++){ sum += y.hosting + y.support; out.push(sum); }
   }
   return out;
@@ -414,7 +414,7 @@ function render(){
     <tr><td>Shopify transaction fee, 2% of sales</td><td>${fmt(fee)}</td></tr>
     <tr><td>Support from year 2</td><td>${fmt(ys.support)}</td></tr>`;
   document.getElementById("run-c").innerHTML = `
-    <tr><td>Cloud hosting, backups, SSL</td><td>${fmt(yc.hosting)}</td></tr>
+    <tr><td>Cloud hosting, backups, SSL<small>Free in year 1, then yearly</small></td><td>${fmt(yc.hosting)}</td></tr>
     <tr><td>Platform commission</td><td>₹0</td></tr>
     <tr><td>Maintenance from year 2</td><td>${fmt(yc.support)}</td></tr>`;
 
@@ -436,8 +436,8 @@ function render(){
     <tr class="sum"><td>Shopify membership in year 1</td><td>${fmt(m0)}</td></tr>
     <tr><td>Development${state.addons.size?" + add-ons":""}</td><td>${fmt(total)}</td></tr>
     <tr class="sum"><td>Total for year 1<small>Plus GST charged by Shopify on the membership</small></td><td>${fmt(total+m0)}</td></tr>`;
-  document.getElementById("tb-year-k").textContent = isS ? "Year 1 with membership" : "Year 1 with hosting";
-  document.getElementById("tb-year").textContent = fmt(total + (isS ? m0 : P.custom.yearly.hosting)) + (isS ? " + Shopify GST" : "");
+  document.getElementById("tb-year-k").textContent = isS ? "Year 1 with membership" : "Year 1 (hosting free)";
+  document.getElementById("tb-year").textContent = fmt(total + (isS ? m0 : 0)) + (isS ? " + Shopify GST" : "");
   document.querySelectorAll(".js-for").forEach(el=>el.textContent = "Showing: " + p.name + " package");
   document.querySelectorAll(".seg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.p===state.path));
   document.getElementById("p-"+state.path).checked = true;
