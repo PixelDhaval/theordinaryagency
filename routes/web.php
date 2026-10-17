@@ -28,3 +28,5 @@ Route::get('/journal/{slug}', [JournalController::class, 'show'])->name('journal
 
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 Route::get('/robots.txt', [SitemapController::class, 'robots'])->name('robots');
+
+Route::view('noor-te-nakhra', 'noor-te-nakhra')->name('noor-te-nakhra');
