@@ -6,7 +6,7 @@ URL: /services/social-media-design
 
 # Social media design services
 
-We design the visuals — templates, graphics, and systems that make your feed look considered instead of improvised. *[State clearly here if this is design-only, i.e. not posting, scheduling, or community management — this is the single biggest point of confusion in this category.]*
+We design the visuals - templates, graphics, and systems that make your feed look considered instead of improvised. *[State clearly here if this is design-only, i.e. not posting, scheduling, or community management - this is the single biggest point of confusion in this category.]*
 
 ---
 
@@ -53,13 +53,13 @@ You receive editable files or a ready-to-use template system.
 ## FAQ
 
 **Which platforms do you design for?**
-Instagram, LinkedIn, and other platforms you actually post on — tell us which ones matter to you.
+Instagram, LinkedIn, and other platforms you actually post on - tell us which ones matter to you.
 
 **Is this a one-off project or an ongoing service?**
-*[State both options clearly if you offer them — one-off batch vs. retainer.]*
+*[State both options clearly if you offer them - one-off batch vs. retainer.]*
 
 **Do you write captions or copy?**
-*[Answer directly — most studios design only; state your actual scope.]*
+*[Answer directly - most studios design only; state your actual scope.]*
 
 **What files do I get, and can I edit them myself?**
 You'll receive editable source files or a template system you can reuse without coming back to us for every post.

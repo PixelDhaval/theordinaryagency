@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Design Services | Branding, Packaging, UI/UX & More')
-@section('description', 'Branding, packaging, pitch decks, social media design, brochures, and UI/UX — explore every design service this studio offers and find the right fit.')
+@section('description', 'Branding, packaging, pitch decks, social media design, brochures, and UI/UX - explore every design service this studio offers and find the right fit.')
 
 @php
     $pageSchema = [
@@ -29,7 +29,7 @@
     <x-page-header
         :breadcrumbs="[['label' => 'Services']]"
         eyebrow="Services"
-        intro="We offer design services across six disciplines — branding, packaging, pitch decks, social media, brochures, and UI/UX — so you can bring one project, or every brand touchpoint, to a single studio."
+        intro="We offer design services across six disciplines - branding, packaging, pitch decks, social media, brochures, and UI/UX - so you can bring one project, or every brand touchpoint, to a single studio."
     >
         Design <span class="accent">services</span>
     </x-page-header>

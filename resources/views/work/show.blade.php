@@ -19,7 +19,7 @@
     ]);
 @endphp
 
-@section('title', $project->seoTitle($project->title.' — '.$project->discipline.' for '.$project->client.' | The Ordinary Agency'))
+@section('title', $project->seoTitle($project->title.' - '.$project->discipline.' for '.$project->client.' | The Ordinary Agency'))
 @section('description', $project->seoDescription($project->summary))
 @section('canonical', $canonical)
 @section('og_type', 'article')
@@ -63,7 +63,7 @@
 
         @if ($project->cover_url)
             <div data-clip-reveal class="relative aspect-[16/10] overflow-hidden bg-ink/5">
-                <img src="{{ $project->cover_url }}" alt="{{ $project->title }} — {{ $project->discipline }} for {{ $project->client }}" class="h-full w-full object-cover">
+                <img src="{{ $project->cover_url }}" alt="{{ $project->title }} - {{ $project->discipline }} for {{ $project->client }}" class="h-full w-full object-cover">
             </div>
         @endif
     </section>
@@ -94,7 +94,7 @@
                     <span class="text-display font-medium leading-[0.95] tracking-[-0.045em] transition-transform duration-700 ease-expo group-hover:translate-x-4">{{ $nextProject->title }}</span>
                     <x-phosphor-arrow-right-thin class="size-[clamp(2rem,5vw,4.5rem)] shrink-0 transition-transform duration-700 ease-expo group-hover:translate-x-2" aria-hidden="true" />
                 </span>
-                <span class="mt-4 block text-fg-muted">{{ $nextProject->client }} — {{ $nextProject->discipline }}</span>
+                <span class="mt-4 block text-fg-muted">{{ $nextProject->client }} - {{ $nextProject->discipline }}</span>
             </a>
         </section>
     @endif

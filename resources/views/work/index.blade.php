@@ -21,8 +21,8 @@
     ];
 @endphp
 
-@section('title', 'Our Work | Branding, Packaging & UI/UX Case Studies'.($projects->currentPage() > 1 ? ' — Page '.$projects->currentPage() : ''))
-@section('description', 'Branding, packaging, pitch deck, social, brochure, and UI/UX projects — see the work and the thinking behind it, then start your own.')
+@section('title', 'Our Work | Branding, Packaging & UI/UX Case Studies'.($projects->currentPage() > 1 ? ' - Page '.$projects->currentPage() : ''))
+@section('description', 'Branding, packaging, pitch deck, social, brochure, and UI/UX projects - see the work and the thinking behind it, then start your own.')
 @section('canonical', request()->fullUrlWithoutQuery(['q']))
 @if ($search !== '')
     @section('robots', 'noindex, follow')

@@ -6,7 +6,7 @@ URL: /services/packaging-design
 
 # Packaging design services
 
-Packaging is the first physical moment someone has with your brand — on a shelf or on their doorstep. We design packaging that holds its own there, then hand off everything your printer needs.
+Packaging is the first physical moment someone has with your brand - on a shelf or on their doorstep. We design packaging that holds its own there, then hand off everything your printer needs.
 
 ---
 
@@ -63,7 +63,7 @@ Print-ready files (correct bleed, color profile, dielines coordinated with your 
 *[State clearly whether this is design-only or includes print production/fulfillment coordination.]*
 
 **Can this scale to multiple SKUs?**
-Yes — we design a system that extends consistently across variants, not just a one-off design for a single product.
+Yes - we design a system that extends consistently across variants, not just a one-off design for a single product.
 
 ---
 

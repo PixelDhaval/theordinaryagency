@@ -6,16 +6,16 @@ URL: /services/brochure-design
 
 # Brochure design services
 
-A good brochure keeps selling after you've left the room. We design print and digital collateral that's clear, on-brand, and ready to hand to your printer — or to a prospect's inbox. *[State clearly here whether copywriting is included or the client needs to supply copy.]*
+A good brochure keeps selling after you've left the room. We design print and digital collateral that's clear, on-brand, and ready to hand to your printer - or to a prospect's inbox. *[State clearly here whether copywriting is included or the client needs to supply copy.]*
 
 ---
 
 ## Which format fits your use case?
 
-- **Tri-fold** — compact, good for mailers and takeaways.
-- **Bi-fold** — simple, good for a single clear offer or overview.
-- **Multi-page booklet** — more room, good for detailed catalogs or portfolios.
-- **Single-sheet** — quick reference, good for trade show handouts or leave-behinds.
+- **Tri-fold** - compact, good for mailers and takeaways.
+- **Bi-fold** - simple, good for a single clear offer or overview.
+- **Multi-page booklet** - more room, good for detailed catalogs or portfolios.
+- **Single-sheet** - quick reference, good for trade show handouts or leave-behinds.
 
 ---
 
@@ -54,7 +54,7 @@ You receive print-ready files plus a digital/PDF version.
 
 ## Case studies
 
-*[Add 2–4 brochure samples here — real printed or finished pieces — linking to their `/work/{slug}` pages.]*
+*[Add 2–4 brochure samples here - real printed or finished pieces - linking to their `/work/{slug}` pages.]*
 
 **[See all brochure work →](/work)**
 
@@ -72,7 +72,7 @@ You receive print-ready files plus a digital/PDF version.
 *[State your real policy here.]*
 
 **Can I get a digital-only version?**
-Yes — every brochure includes a digital/PDF version alongside the print-ready files.
+Yes - every brochure includes a digital/PDF version alongside the print-ready files.
 
 ---
 

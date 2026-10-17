@@ -39,7 +39,7 @@ test('a too-short message gets a helpful error', function () {
         'name' => 'Ada',
         'email' => 'ada@example.com',
         'message' => 'Hi',
-    ])->assertSessionHasErrors(['message' => 'Tell us a little more about your project — at least a sentence or two.']);
+    ])->assertSessionHasErrors(['message' => 'Tell us a little more about your project - at least a sentence or two.']);
 });
 
 test('the service must be one the studio offers', function () {

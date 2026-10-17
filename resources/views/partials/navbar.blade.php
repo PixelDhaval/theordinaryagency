@@ -35,7 +35,7 @@
         </div>
 
         <div data-menu-foot class="flex flex-col justify-between gap-6 border-t border-border-inverse pt-6 text-sm text-fg-muted-inverse sm:flex-row sm:items-end lg:col-span-12">
-            <p class="max-w-sm">Branding, packaging, pitch decks, social media, brochures, and UI/UX — all under one roof.</p>
+            <p class="max-w-sm">Branding, packaging, pitch decks, social media, brochures, and UI/UX - all under one roof.</p>
             <a href="{{ route('contact') }}" class="link-line text-paper">Have a project in mind? Book a call <x-phosphor-arrow-up-right-thin class="size-4" aria-hidden="true" /></a>
         </div>
     </div>

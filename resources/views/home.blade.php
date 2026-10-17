@@ -42,7 +42,7 @@
         <div class="pointer-events-none relative z-10 flex h-full flex-col justify-between px-5 pb-8 pt-28 text-white mix-blend-difference sm:px-10 sm:pt-32">
             <div class="flex items-start justify-between" data-hero-meta>
                 <x-eyebrow>Branding &amp; design studio</x-eyebrow>
-                <x-eyebrow class="hidden sm:flex">Six disciplines — one roof</x-eyebrow>
+                <x-eyebrow class="hidden sm:flex">Six disciplines - one roof</x-eyebrow>
             </div>
 
             <h1 data-hero-title class="text-display font-medium leading-[0.92] tracking-[-0.045em]">
@@ -56,7 +56,7 @@
 
         <div class="absolute inset-x-0 bottom-0 z-20 flex flex-col gap-6 px-5 pb-8 sm:flex-row sm:items-end sm:justify-between sm:px-10" data-hero-foot>
             <p class="max-w-sm text-sm leading-relaxed text-fg-muted">
-                A design studio that handles branding, packaging, pitch decks, social media, brochures, and UI/UX — all under one roof, all built with the same care.
+                A design studio that handles branding, packaging, pitch decks, social media, brochures, and UI/UX - all under one roof, all built with the same care.
             </p>
             <div class="flex items-center gap-6">
                 <button type="button" data-scroll-cue class="group hidden items-center gap-2 text-sm sm:inline-flex" aria-label="Scroll to the next section">
@@ -98,7 +98,7 @@
                 </h2>
 
                 <p data-scrub-words class="mt-14 max-w-3xl text-h3 leading-[1.4] tracking-[-0.01em]">
-                    We keep things minimal because clarity sells better than clutter. Every project starts with understanding what a brand actually needs to say — then we design the smallest, clearest version of that. No unnecessary decoration, no filler pages, no generic templates.
+                    We keep things minimal because clarity sells better than clutter. Every project starts with understanding what a brand actually needs to say - then we design the smallest, clearest version of that. No unnecessary decoration, no filler pages, no generic templates.
                 </p>
 
                 <p data-reveal class="mt-10 max-w-md text-fg-muted">
@@ -210,7 +210,7 @@
                         Four steps, <span class="accent">every project.</span>
                     </h2>
                     <p data-reveal class="mt-8 max-w-md text-fg-muted-inverse">
-                        The same four-step process runs under every project — branding, packaging, pitch decks, social, brochures, UI/UX. What changes is what happens inside each step.
+                        The same four-step process runs under every project - branding, packaging, pitch decks, social, brochures, UI/UX. What changes is what happens inside each step.
                     </p>
                 </div>
                 <div class="flex items-end justify-between gap-8">
@@ -253,7 +253,7 @@
                         Notes from <span class="accent">the studio.</span>
                     </h2>
                     <p data-reveal class="mt-6 max-w-md text-fg-muted">
-                        Notes on branding, packaging, and design process — written from real projects, not generic listicles.
+                        Notes on branding, packaging, and design process - written from real projects, not generic listicles.
                     </p>
                 </div>
                 <a href="{{ route('journal') }}" data-reveal class="link-line self-start text-sm md:self-auto">
@@ -284,7 +284,7 @@
                 Have a project <span class="accent">in mind?</span>
             </h2>
             <p data-reveal class="mt-8 max-w-md text-fg-muted-inverse">
-                Tell us what you’re working on. We’ll figure out the right service — or combination of services — together.
+                Tell us what you’re working on. We’ll figure out the right service - or combination of services - together.
             </p>
 
             <a href="{{ route('contact') }}" data-magnetic data-reveal data-cursor="Let's talk" class="group mt-14 flex size-40 flex-col items-center justify-center gap-2 rounded-full bg-paper text-ink transition-transform duration-700 ease-expo hover:scale-105 sm:size-48">

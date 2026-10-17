@@ -18,8 +18,8 @@
     ];
 @endphp
 
-@section('title', ($activeCategory ? $activeCategory->name.' — ' : '').'Journal | Design Insights from The Ordinary Agency'.($posts->currentPage() > 1 ? ' — Page '.$posts->currentPage() : ''))
-@section('description', 'Notes on branding, packaging, and design process from our studio — real thinking from real projects, not generic tips.')
+@section('title', ($activeCategory ? $activeCategory->name.' - ' : '').'Journal | Design Insights from The Ordinary Agency'.($posts->currentPage() > 1 ? ' - Page '.$posts->currentPage() : ''))
+@section('description', 'Notes on branding, packaging, and design process from our studio - real thinking from real projects, not generic tips.')
 @section('canonical', request()->fullUrlWithoutQuery(['q']))
 @if ($search !== '')
     @section('robots', 'noindex, follow')
@@ -33,7 +33,7 @@
     <x-page-header
         :breadcrumbs="$activeCategory ? [['label' => 'Journal', 'url' => route('journal')], ['label' => $activeCategory->name]] : [['label' => 'Journal']]"
         eyebrow="Journal"
-        intro="Notes on branding, packaging, and design process — written from real projects, not generic listicles."
+        intro="Notes on branding, packaging, and design process - written from real projects, not generic listicles."
     >
         Notes from <span class="accent">the studio</span>
     </x-page-header>

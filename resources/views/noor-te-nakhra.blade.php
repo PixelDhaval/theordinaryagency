@@ -1,5 +1,5 @@
 @php
-    $title = 'Noor te Nakhra — Online Store Proposal | The Ordinary Agency';
+    $title = 'Noor te Nakhra - Online Store Proposal | The Ordinary Agency';
     $description = 'Two ways to take Noor te Nakhra online: a fast Shopify store or a fully owned custom store. Compare packages, add-ons, timelines and 3-year costs.';
     $ogImage = asset(config('agency.og_image'));
     $canonical = route('noor-te-nakhra');
@@ -41,7 +41,7 @@
 </head>
 <body>
 <style>
-/* Layout: a single long letter that reconfigures itself — path switch at top, live total pinned to the bottom edge */
+/* Layout: a single long letter that reconfigures itself - path switch at top, live total pinned to the bottom edge */
 :root{
   --bg:#F6F3F8; --surface:#FFFFFF; --ink:#22182C; --muted:#6B5E77; --line:#E3DCE9;
   --gold:#C27E0E; --gold-soft:#F8E9CC; --rani:#A8205A; --rani-soft:#F6DDE8;
@@ -99,7 +99,7 @@ section{display:flex;flex-direction:column;gap:20px}
 .path .pick::after{content:"Tap to view this package"}
 .path:has(input:checked) .pick{background:var(--rani);border-color:var(--rani);color:var(--surface)}
 .path:has(input:checked) .pick::before{border-color:var(--surface);background:radial-gradient(circle,var(--surface) 0 4px,transparent 5px)}
-.path:has(input:checked) .pick::after{content:"Selected — details shown below"}
+.path:has(input:checked) .pick::after{content:"Selected - details shown below"}
 .for{align-self:flex-start;font-size:.82rem;font-weight:600;padding:4px 10px;border-radius:99px;background:var(--rani-soft);color:var(--rani)}
 .seg{display:inline-flex;border:1px solid var(--bg);border-radius:99px;padding:3px;gap:3px}
 .seg button{font:inherit;font-size:.85rem;font-weight:600;border:0;border-radius:99px;padding:7px 14px;background:transparent;color:var(--bg);cursor:pointer}

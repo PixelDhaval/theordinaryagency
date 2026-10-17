@@ -5,7 +5,7 @@
 
 ## Foundational Context
 
-This application is a Laravel application running on PHP 8.4. Always use the APIs that match the installed major version of each package — do not assume a version.
+This application is a Laravel application running on PHP 8.4. Always use the APIs that match the installed major version of each package - do not assume a version.
 
 Before relying on a package's API, confirm its installed version:
 - PHP packages: run `composer show --direct` to list direct dependencies with versions, or `composer show <vendor/package>` for a single package.
@@ -13,7 +13,7 @@ Before relying on a package's API, confirm its installed version:
 
 ## Skills Activation
 
-This project has domain-specific skills available in `**/skills/**`. You MUST activate the relevant skill whenever you work in that domain—don't wait until you're stuck.
+This project has domain-specific skills available in `**/skills/**`. You MUST activate the relevant skill whenever you work in that domain-don't wait until you're stuck.
 
 ## Conventions
 
@@ -161,20 +161,20 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 
 ## Project Context: The Ordinary Agency
 
-This app is the marketing site for **The Ordinary Agency**, a branding and design studio (services: Branding, Packaging Design, Pitch Deck Design, Social Media Design, Brochure Design, UI/UX Design). Brand: black-and-white only, minimal and elegant, motion/video-driven landing page. Before writing copy, building pages, or touching styling, read the relevant files below — they are the source of truth, not something to re-derive or invent.
+This app is the marketing site for **The Ordinary Agency**, a branding and design studio (services: Branding, Packaging Design, Pitch Deck Design, Social Media Design, Brochure Design, UI/UX Design). Brand: black-and-white only, minimal and elegant, motion/video-driven landing page. Before writing copy, building pages, or touching styling, read the relevant files below - they are the source of truth, not something to re-derive or invent.
 
-### Content & SEO briefs — `content/briefs/*.md`
+### Content & SEO briefs - `content/briefs/*.md`
 
 One file per page (`home.md`, `about.md`, `services.md`, `work.md`, `process.md`, `journal.md`, `contact.md`, plus `services/*.md` for each of the six service pages). Each brief documents search intent, competitor analysis, the winning content outline, meta tags, and internal linking for that page. Read the matching brief before changing a page's structure, headings, or SEO metadata.
 
-### Final page copy — `content/pages/*.md`
+### Final page copy - `content/pages/*.md`
 
-Mirrors `content/briefs/` one-to-one and is the **finished, approved copy** to implement in Blade views — not a draft. Each file opens with an HTML comment block giving the meta title, meta description, and URL for that route. Some sections are explicitly marked as placeholders in italics (e.g. "Add 3–6 case studies here," "omit this section entirely until you have genuine, permissioned examples") — treat those as conditional sections to render only once real content exists, never fill them with invented/placeholder content.
+Mirrors `content/briefs/` one-to-one and is the **finished, approved copy** to implement in Blade views - not a draft. Each file opens with an HTML comment block giving the meta title, meta description, and URL for that route. Some sections are explicitly marked as placeholders in italics (e.g. "Add 3–6 case studies here," "omit this section entirely until you have genuine, permissioned examples") - treat those as conditional sections to render only once real content exists, never fill them with invented/placeholder content.
 
-### Design system — `design.md`
+### Design system - `design.md`
 
-Project-root design specification covering brand principles, the logo mark (`public/img/logo/` — see the file for the light/dark naming convention, which describes the *background* the file suits, not the mark's own color), the black/white color token system, typography (self-hosted TT Firs Neue + Adam in `public/fonts/`, no italics — accents use the `.accent` class; the Firs Neue file is a trial license that must be replaced before launch), layout/grid, the motion system, component specs, and a page-by-page layout mapping to `content/pages/`. Read it before any frontend/CSS work — it defines the `@theme` tokens in `resources/css/app.css` and the motion approach (GSAP modules in `resources/js/modules/`, Phosphor Blade icons).
+Project-root design specification covering brand principles, the logo mark (`public/img/logo/` - see the file for the light/dark naming convention, which describes the *background* the file suits, not the mark's own color), the black/white color token system, typography (self-hosted TT Firs Neue + Adam in `public/fonts/`, no italics - accents use the `.accent` class; the Firs Neue file is a trial license that must be replaced before launch), layout/grid, the motion system, component specs, and a page-by-page layout mapping to `content/pages/`. Read it before any frontend/CSS work - it defines the `@theme` tokens in `resources/css/app.css` and the motion approach (GSAP modules in `resources/js/modules/`, Phosphor Blade icons).
 
-### Dynamic content — Filament admin (`/admin`)
+### Dynamic content - Filament admin (`/admin`)
 
 Work (`Project`), Journal (`Post` + `Category`) and contact-form enquiries (`ContactSubmission`) live in the database and are managed in the Filament v5 panel at `/admin` (resources in `app/Filament/Resources`). Static pages (services, about, process) still come from `content/pages/*.md` and `App\Support\ServiceCatalog`. Posts and projects share SEO override fields via `App\Models\Concerns\HasSeo` and `App\Filament\Schemas\SeoSection`; only records with a past `published_at` appear publicly (`published()` scope). Local sample data comes from `Database\Seeders\SampleContentSeeder` (never seeded in production). Uploaded images use the `public` disk, so `APP_URL` must match the site's domain.

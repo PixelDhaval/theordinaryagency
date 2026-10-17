@@ -49,7 +49,7 @@ class PostsTable
                     ->label('Publish date')
                     ->dateTime('M j, Y')
                     ->sortable()
-                    ->placeholder('—'),
+                    ->placeholder('-'),
                 TextColumn::make('reading_time')
                     ->suffix(' min')
                     ->toggleable(isToggledHiddenByDefault: true),

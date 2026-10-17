@@ -30,7 +30,7 @@ class ContactSubmissionInfolist
                             ->copyable()
                             ->url(fn (ContactSubmission $record): string => 'mailto:'.$record->email),
                         TextEntry::make('company')
-                            ->placeholder('—'),
+                            ->placeholder('-'),
                         TextEntry::make('service')
                             ->label('Interested in')
                             ->badge()
@@ -40,7 +40,7 @@ class ContactSubmissionInfolist
                             ->dateTime('M j, Y · g:i A'),
                         TextEntry::make('ip_address')
                             ->label('IP address')
-                            ->placeholder('—'),
+                            ->placeholder('-'),
                     ]),
             ]);
     }

@@ -37,7 +37,7 @@ class StoreContactSubmissionRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'message.min' => 'Tell us a little more about your project — at least a sentence or two.',
+            'message.min' => 'Tell us a little more about your project - at least a sentence or two.',
             'website.prohibited' => 'Something went wrong. Please try again.',
         ];
     }

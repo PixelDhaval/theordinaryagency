@@ -28,7 +28,7 @@
     <x-page-header
         :breadcrumbs="[['label' => 'Contact']]"
         eyebrow="Contact"
-        intro="Book a quick call to talk through your project — branding, packaging, pitch decks, social, brochures, or UI/UX."
+        intro="Book a quick call to talk through your project - branding, packaging, pitch decks, social, brochures, or UI/UX."
     >
         Let’s <span class="accent">talk</span>
     </x-page-header>

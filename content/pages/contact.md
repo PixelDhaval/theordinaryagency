@@ -6,7 +6,7 @@ URL: /contact
 
 # Let's talk
 
-Book a quick call to talk through your project — branding, packaging, pitch decks, social, brochures, or UI/UX.
+Book a quick call to talk through your project - branding, packaging, pitch decks, social, brochures, or UI/UX.
 
 ---
 

@@ -1,6 +1,6 @@
 <!--
 Meta Title: Our Work | Branding, Packaging & UI/UX Case Studies
-Meta Description: Branding, packaging, pitch deck, social, brochure, and UI/UX projects — see the work and the thinking behind it, then start your own.
+Meta Description: Branding, packaging, pitch deck, social, brochure, and UI/UX projects - see the work and the thinking behind it, then start your own.
 URL: /work
 -->
 
@@ -12,7 +12,7 @@ A selection of projects across branding, packaging, pitch decks, social media, b
 
 ---
 
-*[Populate this grid with real completed projects. Each card needs: project/client name, discipline tag, a one-line outcome (e.g. "New packaging system across 6 SKUs, launched nationally"), and a link to its own case study page at `/work/{slug}`. Do not use placeholder or speculative work presented as client work — label concept work clearly if it's ever included.]*
+*[Populate this grid with real completed projects. Each card needs: project/client name, discipline tag, a one-line outcome (e.g. "New packaging system across 6 SKUs, launched nationally"), and a link to its own case study page at `/work/{slug}`. Do not use placeholder or speculative work presented as client work - label concept work clearly if it's ever included.]*
 
 **Example card format:**
 > **[Client/Project Name]**

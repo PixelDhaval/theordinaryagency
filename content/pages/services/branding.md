@@ -6,7 +6,7 @@ URL: /services/branding
 
 # Branding design services
 
-Branding, to us, is the thinking and the system behind how your business looks, sounds, and feels — built so it holds up whether you're launching for the first time or rebuilding from scratch.
+Branding, to us, is the thinking and the system behind how your business looks, sounds, and feels - built so it holds up whether you're launching for the first time or rebuilding from scratch.
 
 ---
 
@@ -30,13 +30,13 @@ Branding, to us, is the thinking and the system behind how your business looks, 
 ## Our process
 
 ### 1. Discovery
-We learn your business, audience, and goals — and what the brand needs to communicate that it currently doesn't.
+We learn your business, audience, and goals - and what the brand needs to communicate that it currently doesn't.
 
 ### 2. Concept
 We explore a small number of strong directions rather than dozens of weak ones, so early feedback is focused.
 
 ### 3. Design & Refinement
-We build out the chosen direction into a full system — logo, color, type, applications — and refine it with your input.
+We build out the chosen direction into a full system - logo, color, type, applications - and refine it with your input.
 
 ### 4. Handoff & Guidelines
 You receive final files and a guidelines document so the identity stays consistent as your team grows.
@@ -63,7 +63,7 @@ A clear sense of your business, audience, and any existing materials (old logo, 
 You'll receive final files and guidelines to use internally. *[Add details on any ongoing support you offer, if applicable.]*
 
 **What's the difference between a logo refresh and a full rebrand?**
-A refresh updates the mark and visuals while keeping your core positioning. A full rebrand rethinks the strategy and identity together — usually because the business itself has changed.
+A refresh updates the mark and visuals while keeping your core positioning. A full rebrand rethinks the strategy and identity together - usually because the business itself has changed.
 
 ---
 

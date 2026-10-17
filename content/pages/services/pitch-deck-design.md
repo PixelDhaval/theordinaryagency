@@ -8,7 +8,7 @@ URL: /services/pitch-deck-design
 
 A pitch deck has one job: make your story easy to follow and hard to forget. We design decks for fundraising, sales, and board conversations that get out of the way of the story, not in front of it.
 
-*[State clearly here whether you support narrative/content development or design the deck around content the client already has — this is a key thing prospects need to know upfront.]*
+*[State clearly here whether you support narrative/content development or design the deck around content the client already has - this is a key thing prospects need to know upfront.]*
 
 ---
 
@@ -32,7 +32,7 @@ A pitch deck has one job: make your story easy to follow and hard to forget. We 
 ## Our process
 
 ### 1. Discovery & Content Review
-We review what you already have — notes, data, an existing rough deck — and understand your audience and goals.
+We review what you already have - notes, data, an existing rough deck - and understand your audience and goals.
 
 ### 2. Structure & Storyboard
 We map the story slide by slide before any visual design starts, so the structure is right first.
@@ -47,7 +47,7 @@ You receive final files in your preferred format, ready to present.
 
 ## Case studies
 
-*[Add deck sample thumbnails or slides here — redact confidential figures where necessary and note clearly that they've been anonymized for confidentiality.]*
+*[Add deck sample thumbnails or slides here - redact confidential figures where necessary and note clearly that they've been anonymized for confidentiality.]*
 
 **[See more pitch deck work →](/work)**
 
@@ -59,10 +59,10 @@ You receive final files in your preferred format, ready to present.
 *[Replace with your real typical turnaround, e.g. "Most decks take 10–14 days depending on complexity."]*
 
 **Do you handle NDAs and confidentiality?**
-*[State your actual practice here — most fundraising decks require confidentiality, so be explicit about how you handle this.]*
+*[State your actual practice here - most fundraising decks require confidentiality, so be explicit about how you handle this.]*
 
 **Do you help with the content, or just the design?**
-*[Answer directly — this is the most common point of confusion for this service.]*
+*[Answer directly - this is the most common point of confusion for this service.]*
 
 **What file formats do you deliver?**
 Editable source files in your preferred format (Figma, PowerPoint, or Keynote), plus a presentation-ready PDF.

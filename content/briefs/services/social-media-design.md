@@ -1,18 +1,18 @@
 ## Content Brief: social media design services
 
 ### Search Intent
-Commercial. Searchers need ongoing or project-based visual content for social platforms and are comparing design studios vs. full marketing agencies vs. freelancers. Audience: small business owners and marketing managers who need consistent, on-brand visuals but may not need full social media *management* (strategy, posting, community management) — just the design. Google rewards a service/landing-page format with visual examples front and center.
+Commercial. Searchers need ongoing or project-based visual content for social platforms and are comparing design studios vs. full marketing agencies vs. freelancers. Audience: small business owners and marketing managers who need consistent, on-brand visuals but may not need full social media *management* (strategy, posting, community management) - just the design. Google rewards a service/landing-page format with visual examples front and center.
 
 ### Competitor Analysis
 | # | URL | Key H2 Sections | Est. Words | Score | Main Gap |
 |---|-----|-----------------|------------|-------|----------|
 | 1 | theiamedia.agency/social-media-design | Process, Key Features, Profile/Banner/Blog Design, FAQ | ~2,200 | 24/40 | Covers some outdated formats (Twitter headers, "blog design") that dilute focus from current core platforms (Instagram, LinkedIn, TikTok) |
-| 2 | webfx.com/social-media/services/design/ | Custom post/profile/ad design | n/a | 26/40 | Bundled inside a much larger paid-ads/marketing offering — design is a line item, not the focus |
+| 2 | webfx.com/social-media/services/design/ | Custom post/profile/ad design | n/a | 26/40 | Bundled inside a much larger paid-ads/marketing offering - design is a line item, not the focus |
 | 3 | awesomic.com (social media design agencies roundup, used as category benchmark) | Post/carousel design, template systems, motion | n/a | n/a | Category trend: template + brand-kit systems are increasingly expected, not just one-off posts |
 
 ### Content Gaps and Opportunities
-- **Topic gap:** Competitors still reference outdated deliverables (Twitter/X headers, generic "blog design") instead of current priority formats — carousels, Reels/short-form video covers, LinkedIn banners, templated systems founders can reuse. Updating the deliverable list to match current platform reality is a clear gap.
-- **Depth gap:** Few competitor pages clarify whether a *reusable template system* (so the client can self-serve future posts) is included vs. one-off custom design per post — this is a real decision point for buyers and worth stating explicitly.
+- **Topic gap:** Competitors still reference outdated deliverables (Twitter/X headers, generic "blog design") instead of current priority formats - carousels, Reels/short-form video covers, LinkedIn banners, templated systems founders can reuse. Updating the deliverable list to match current platform reality is a clear gap.
+- **Depth gap:** Few competitor pages clarify whether a *reusable template system* (so the client can self-serve future posts) is included vs. one-off custom design per post - this is a real decision point for buyers and worth stating explicitly.
 - **Quality gap:** Pages in this category often blur design with full social media *management* (strategy, scheduling, community management). A page that's explicit this is design-only (or design + optional strategy) avoids setting the wrong expectation.
 
 ### Winning Outline
@@ -38,7 +38,7 @@ Social Media Design Services | The Ordinary Agency
 On-brand templates and graphics for Instagram, LinkedIn, and more. See our process and samples, then start your social design project.
 
 ### Unique Angle and Information Gain
-Explicit scope clarity (design vs. management) plus a current, platform-accurate deliverable list — most competitors mix outdated formats or blur design into full social media management, creating confusion this page can resolve directly.
+Explicit scope clarity (design vs. management) plus a current, platform-accurate deliverable list - most competitors mix outdated formats or blur design into full social media management, creating confusion this page can resolve directly.
 
 ### E-E-A-T Requirements
 - Visual samples must be real design work, shown at actual platform dimensions where possible

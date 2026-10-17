@@ -54,7 +54,7 @@ class SampleContentSeeder extends Seeder
                 'summary' => 'A storefront for a camera repair specialist, built around the parts.',
                 'cover' => 'img/sample/work-lens.webp', 'gallery' => ['img/home/ui-ux.webp', 'img/home/social-media.webp'],
                 'is_featured' => false,
-                'body' => "## The brief\n\nA repair specialist's catalogue had outgrown its storefront.\n\n## The approach\n\nWe mapped how customers search — by camera model first — and rebuilt navigation around it, then designed a component library for the team to extend.\n\n## The outcome\n\nA storefront where finding the right part takes a few taps, not a phone call.",
+                'body' => "## The brief\n\nA repair specialist's catalogue had outgrown its storefront.\n\n## The approach\n\nWe mapped how customers search - by camera model first - and rebuilt navigation around it, then designed a component library for the team to extend.\n\n## The outcome\n\nA storefront where finding the right part takes a few taps, not a phone call.",
             ],
         ];
 
@@ -90,7 +90,7 @@ class SampleContentSeeder extends Seeder
             ['type' => 'image', 'data' => [
                 'image' => $this->copyToDisk('img/home/process.webp', 'projects/blocks'),
                 'alt' => 'Escalators rising through a symmetrical modern station',
-                'caption' => 'The narrative moves the way the building does — one level at a time.',
+                'caption' => 'The narrative moves the way the building does - one level at a time.',
                 'width' => 'wide',
             ]],
             ['type' => 'html', 'data' => [
@@ -138,7 +138,7 @@ class SampleContentSeeder extends Seeder
             [
                 'title' => 'Why we start every brand with a single sentence', 'slug' => 'start-with-a-single-sentence',
                 'category' => 'Branding & Identity', 'cover' => 'img/sample/journal-one-sentence.webp', 'published_at' => '2026-09-18',
-                'excerpt' => 'Before logos or colour, we write down what the brand needs to say — in one line.',
+                'excerpt' => 'Before logos or colour, we write down what the brand needs to say - in one line.',
                 'body' => "Every identity we design starts the same way: one sentence that says what the brand is for.\n\n## Why one sentence\n\nIf it can't be said simply, it can't be designed simply. The sentence becomes the test every later decision has to pass.\n\n## What happens next\n\nOnly once the sentence holds up do we open a sketchbook.",
             ],
             [

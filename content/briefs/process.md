@@ -21,12 +21,12 @@ Informational/trust-building, mostly visited by prospects already considering th
 
 - **Intro (60-80 words):** Why the process matters / what a client can expect working with the studio.
 - **Step-by-step process (H2 per step, ~100-130 words each, 4 steps ≈ 450 words):**
-  1. **Discovery** — goals, audience, scope defined
-  2. **Concept** — initial directions/exploration
-  3. **Design & Refinement** — iteration based on feedback
-  4. **Delivery & Handoff** — final files, guidelines, support
+  1. **Discovery** - goals, audience, scope defined
+  2. **Concept** - initial directions/exploration
+  3. **Design & Refinement** - iteration based on feedback
+  4. **Delivery & Handoff** - final files, guidelines, support
   Note per step how it flexes slightly by service (e.g. packaging adds production file prep; UI/UX adds developer handoff).
-- **What we need from you (80-100 words):** Brief/goals, brand assets if existing, timely feedback — sets expectations for a smooth project.
+- **What we need from you (80-100 words):** Brief/goals, brand assets if existing, timely feedback - sets expectations for a smooth project.
 - **Timeline note (40-60 words):** Rough duration ranges per service type (link to relevant service pages for specifics).
 - **CTA (40-50 words):** Link to /contact.
 
@@ -36,10 +36,10 @@ Informational/trust-building, mostly visited by prospects already considering th
 Our Process | How We Work | The Ordinary Agency
 
 **Meta Description**
-From discovery to delivery — see exactly how a project with us works, step by step, before you book a call.
+From discovery to delivery - see exactly how a project with us works, step by step, before you book a call.
 
 ### Unique Angle and Information Gain
-A single process framework shown flexing across six different services (rather than a generic one-discipline process page), plus honest timeline expectations — concrete planning information most competitor process pages omit.
+A single process framework shown flexing across six different services (rather than a generic one-discipline process page), plus honest timeline expectations - concrete planning information most competitor process pages omit.
 
 ### E-E-A-T Requirements
 - Steps and timelines described must match how the studio actually works, not an idealized/invented version

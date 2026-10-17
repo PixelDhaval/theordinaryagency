@@ -17,6 +17,6 @@ class ContactSubmissionController extends Controller
 
         return redirect()
             ->to(route('contact').'#enquiry')
-            ->with('contact_status', 'Thanks — your message is in. We’ll get back to you shortly.');
+            ->with('contact_status', 'Thanks - your message is in. We’ll get back to you shortly.');
     }
 }

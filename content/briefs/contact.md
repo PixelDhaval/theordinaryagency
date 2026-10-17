@@ -1,7 +1,7 @@
 ## Content Brief: contact design agency
 
 ### Search Intent
-Transactional. Visitor has decided (or nearly decided) to reach out and wants the lowest-friction path to do so. Low SERP competitiveness for the generic term — this page is optimized for conversion rate, not organic ranking. Google format reward: short page, clear form/scheduler, minimal distraction.
+Transactional. Visitor has decided (or nearly decided) to reach out and wants the lowest-friction path to do so. Low SERP competitiveness for the generic term - this page is optimized for conversion rate, not organic ranking. Google format reward: short page, clear form/scheduler, minimal distraction.
 
 ### Competitor Analysis
 | # | URL | Key Structure | Est. Words | Score | Main Gap |
@@ -34,7 +34,7 @@ Contact Us | Book a Call | The Ordinary Agency
 Ready to start your branding, packaging, or design project? Book a quick call with our studio or reach out directly.
 
 ### Unique Angle and Information Gain
-A dual-path contact flow (scheduler-first, with a clear low-friction fallback) plus a short "what happens next" line — closes the small but real anxiety/drop-off gap left by booking-only competitor pages.
+A dual-path contact flow (scheduler-first, with a clear low-friction fallback) plus a short "what happens next" line - closes the small but real anxiety/drop-off gap left by booking-only competitor pages.
 
 ### E-E-A-T Requirements
 - Scheduler link and contact details must be real, working, and actively monitored

@@ -1,7 +1,7 @@
 <header id="site-header" class="pointer-events-none fixed inset-x-0 top-0 z-[120] text-white mix-blend-difference">
     <div class="flex items-center justify-between px-5 py-5 sm:px-10 sm:py-7">
 
-        <a href="{{ route('home') }}" class="pointer-events-auto block" aria-label="The Ordinary Agency — home" data-cursor="Home">
+        <a href="{{ route('home') }}" class="pointer-events-auto block" aria-label="The Ordinary Agency - home" data-cursor="Home">
             <img src="{{ asset('img/logo/logo-dark.png') }}" alt="The Ordinary Agency" width="1223" height="329" class="h-8 w-auto sm:h-9">
         </a>
 

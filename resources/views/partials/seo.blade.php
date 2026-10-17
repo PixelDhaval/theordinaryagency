@@ -1,7 +1,7 @@
 @php
     // Inline @section values are already HTML-escaped by Blade, so they are echoed raw below.
     $siteName = config('agency.name');
-    $pageTitle = trim($__env->yieldContent('title')) ?: e($siteName.' — Branding & Design Studio');
+    $pageTitle = trim($__env->yieldContent('title')) ?: e($siteName.' - Branding & Design Studio');
     $pageDescription = trim($__env->yieldContent('description')) ?: e('A branding and design studio for packaging, pitch decks, social, brochures, and UI/UX. See the work, then book a call to start your project.');
     $canonical = trim($__env->yieldContent('canonical')) ?: url()->current();
     $robots = trim($__env->yieldContent('robots')) ?: (app()->isProduction() ? 'index, follow, max-image-preview:large' : 'noindex, nofollow');

@@ -7,7 +7,7 @@
     <a href="{{ route('work.show', $project->slug) }}" data-cursor="View" class="block">
         <div data-clip-reveal class="relative overflow-hidden bg-ink/5 {{ $aspect }}">
             <img src="{{ $project->cover_url }}"
-                 alt="{{ $project->title }} — {{ $project->discipline }} for {{ $project->client }}"
+                 alt="{{ $project->title }} - {{ $project->discipline }} for {{ $project->client }}"
                  loading="lazy"
                  class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1400ms] ease-expo group-hover:scale-105">
             <span class="absolute left-4 top-4 rounded-full bg-paper/90 px-3 py-1.5 text-eyebrow uppercase tracking-[0.2em] text-ink backdrop-blur-sm">
@@ -24,7 +24,7 @@
                     <span class="link-line">{{ $project->title }}</span>
                 </h3>
                 <p class="mt-2 max-w-md text-sm leading-relaxed text-fg-muted">
-                    <span class="text-ink">{{ $project->client }}</span> — {{ $project->summary }}
+                    <span class="text-ink">{{ $project->client }}</span> - {{ $project->summary }}
                 </p>
             </div>
             <span class="pt-1.5 text-eyebrow tabular-nums text-fg-muted">{{ $project->year }}</span>

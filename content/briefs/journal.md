@@ -1,7 +1,7 @@
 ## Content Brief: design insights blog
 
 ### Search Intent
-Informational, top-of-funnel. This is a hub/index page for individual articles, not a ranking target itself in most cases — individual posts will carry keyword-specific intent. Google format reward: a clean, filterable index of articles (title, excerpt, category, date).
+Informational, top-of-funnel. This is a hub/index page for individual articles, not a ranking target itself in most cases - individual posts will carry keyword-specific intent. Google format reward: a clean, filterable index of articles (title, excerpt, category, date).
 
 ### Competitor Analysis
 | # | URL | Key H2/Structure | Est. Words | Score | Main Gap |
@@ -10,11 +10,11 @@ Informational, top-of-funnel. This is a hub/index page for individual articles, 
 | 2 | everything.design/blog | Brand strategy insights, categorized posts | low (index) | 24/40 | Decent categorization but generic "Insights" framing with no clear content pillars stated upfront |
 
 ### Content Gaps and Opportunities
-- **Topic gap:** Most competitor journal indexes don't state their content pillars (what topics they'll consistently cover) — stating 3-4 clear pillars (e.g. branding, packaging trends, design process, case-study breakdowns) upfront helps readers and signals topical authority to search engines over time.
-- **Depth gap:** Few index pages explain *why* the studio writes (e.g. sharing real process/thinking vs. generic listicles) — a short framing line differentiates a design-forward journal from generic "10 tips" content mills.
+- **Topic gap:** Most competitor journal indexes don't state their content pillars (what topics they'll consistently cover) - stating 3-4 clear pillars (e.g. branding, packaging trends, design process, case-study breakdowns) upfront helps readers and signals topical authority to search engines over time.
+- **Depth gap:** Few index pages explain *why* the studio writes (e.g. sharing real process/thinking vs. generic listicles) - a short framing line differentiates a design-forward journal from generic "10 tips" content mills.
 
 ### Site Structure Coverage Rule
-As a hub page for future articles, this index should support filtering/categorization aligned to the studio's actual content pillars (not every service needs its own filter — group logically, e.g. Branding & Identity, Packaging, Process & Craft, News/Updates).
+As a hub page for future articles, this index should support filtering/categorization aligned to the studio's actual content pillars (not every service needs its own filter - group logically, e.g. Branding & Identity, Packaging, Process & Craft, News/Updates).
 
 ### Winning Outline
 
@@ -33,10 +33,10 @@ As a hub page for future articles, this index should support filtering/categoriz
 Journal | Design Insights from The Ordinary Agency
 
 **Meta Description**
-Notes on branding, packaging, and design process from our studio — real thinking from real projects, not generic tips.
+Notes on branding, packaging, and design process from our studio - real thinking from real projects, not generic tips.
 
 ### Unique Angle and Information Gain
-Clearly stated content pillars plus a stated editorial point of view (writing from real project experience, not generic listicle content) — a positioning gap left open by competitor journals that use vague "insights" framing with no stated focus.
+Clearly stated content pillars plus a stated editorial point of view (writing from real project experience, not generic listicle content) - a positioning gap left open by competitor journals that use vague "insights" framing with no stated focus.
 
 ### E-E-A-T Requirements
 - Articles should be authored with a named author/bio where possible, tied to real studio expertise

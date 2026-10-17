@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'About Us | The Ordinary Agency Design Studio')
-@section('description', 'Meet the studio behind the work — our story, our approach to minimal, elegant design, and the people doing it. See our process and get in touch.')
+@section('description', 'Meet the studio behind the work - our story, our approach to minimal, elegant design, and the people doing it. See our process and get in touch.')
 
 @php
     $pageSchema = [
@@ -32,7 +32,7 @@
                     How we think <span class="accent">about design</span>
                 </h2>
                 <p data-reveal class="mt-10 max-w-xl text-h3 leading-[1.45] tracking-[-0.01em]">
-                    Minimal doesn’t mean empty — it means nothing is on the page (or the package, the deck, the screen) that isn’t earning its place.
+                    Minimal doesn’t mean empty - it means nothing is on the page (or the package, the deck, the screen) that isn’t earning its place.
                 </p>
                 <p data-reveal class="mt-6 max-w-xl text-fg-muted">
                     We’d rather spend time removing what doesn’t matter than adding what might. That’s the standard we hold every branding, packaging, pitch deck, social, brochure, and UI/UX project to.

@@ -6,13 +6,13 @@ URL: /services/ui-ux-design
 
 # UI/UX design services
 
-We design digital products — websites, apps, and dashboards — grounded in research and refined into interfaces that feel obvious to use. *[State your actual engagement model here, e.g. project-based vs. retainer.]*
+We design digital products - websites, apps, and dashboards - grounded in research and refined into interfaces that feel obvious to use. *[State your actual engagement model here, e.g. project-based vs. retainer.]*
 
 ---
 
 ## UX and UI, plainly
 
-**UX** is the research and structure behind a product — how it's organized, how people move through it, what it needs to do. **UI** is the visual interface built on top of that structure — what it looks like, how it feels to use. We handle both, together, so they're never out of sync.
+**UX** is the research and structure behind a product - how it's organized, how people move through it, what it needs to do. **UI** is the visual interface built on top of that structure - what it looks like, how it feels to use. We handle both, together, so they're never out of sync.
 
 ---
 
@@ -52,7 +52,7 @@ You receive organized, developer-ready files and documentation.
 
 ## Case studies
 
-*[Add UI/UX project thumbnails here — real product screens and flows, not generic UI kit mockups — linking to their `/work/{slug}` pages.]*
+*[Add UI/UX project thumbnails here - real product screens and flows, not generic UI kit mockups - linking to their `/work/{slug}` pages.]*
 
 **[See all product design work →](/work)**
 
@@ -64,7 +64,7 @@ You receive organized, developer-ready files and documentation.
 Figma, primarily, for design and prototyping.
 
 **Do you build/develop the product too, or design only?**
-*[State this clearly — most design studios are design-only; say so explicitly if that's true here.]*
+*[State this clearly - most design studios are design-only; say so explicitly if that's true here.]*
 
 **How long does a typical project take?**
 *[Replace with your real typical timeline.]*

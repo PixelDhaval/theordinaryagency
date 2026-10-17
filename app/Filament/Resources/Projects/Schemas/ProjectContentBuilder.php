@@ -99,7 +99,7 @@ class ProjectContentBuilder
                     ->directory('projects/videos')
                     ->acceptedFileTypes(self::VIDEO_TYPES)
                     ->maxSize(self::MAX_VIDEO_KB)
-                    ->helperText('MP4 or WebM, up to 50 MB. Compress before uploading — short, silent loops work best.'),
+                    ->helperText('MP4 or WebM, up to 50 MB. Compress before uploading - short, silent loops work best.'),
                 FileUpload::make('poster')
                     ->label('Poster image')
                     ->image()
