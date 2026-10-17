@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Noor te Nakhara Proposal</title>
+<title>Noor te Nakhra Proposal</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -164,10 +164,10 @@ section{display:flex;flex-direction:column;gap:20px}
 <div class="wrap">
   <header class="hero">
     <span class="eyebrow">Quotation NTN-2026-017 · 17 October 2026</span>
-    <h1><span class="glow">Noor</span> te <em>Nakhara</em>,<br>now online.</h1>
+    <h1><span class="glow">Noor</span> te <em>Nakhra</em>,<br>now online.</h1>
     <p class="lede">Two ways to build your store. Pick a path below, add what you need, and every price, timeline and running cost on this page updates as you go.</p>
     <div class="meta">
-      <div><span class="eyebrow">Prepared for</span><strong>Noor te Nakhara</strong></div>
+      <div><span class="eyebrow">Prepared for</span><strong>Noor te Nakhra</strong></div>
       <div><span class="eyebrow">Prepared by</span><strong>Dhaval Maru</strong><span>The Ordinary Agency, Ahmedabad</span></div>
       <div><span class="eyebrow">Valid until</span><strong>16 November 2026</strong></div>
     </div>
@@ -240,7 +240,7 @@ section{display:flex;flex-direction:column;gap:20px}
   </section>
 
   <section>
-    <div class="head"><span class="eyebrow">Our advice</span><h2>Which one fits Noor te Nakhara?</h2></div>
+    <div class="head"><span class="eyebrow">Our advice</span><h2>Which one fits Noor te Nakhra?</h2></div>
     <div class="choose">
       <div><h3>Choose Shopify if</h3><ul>
         <li>You want to start selling before the wedding and festive season</li>
@@ -288,7 +288,7 @@ const P = {
   shopify:{ name:"Shopify store", base:15000, weeks:1,
     title:"Your Shopify store includes",
     included:[
-      ["Shopify theme, styled to your brand","Colours, fonts, homepage sections and banners designed for Noor te Nakhara"],
+      ["Shopify theme, styled to your brand","Colours, fonts, homepage sections and banners designed for Noor te Nakhra"],
       ["Up to 100 products uploaded","With size and colour variants, collections and filters"],
       ["Razorpay payments + COD","UPI, cards, net banking and cash on delivery"],
       ["Shiprocket shipping setup","Automatic rates, pincode check and order tracking"],
