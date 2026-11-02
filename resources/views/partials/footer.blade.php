@@ -10,6 +10,17 @@
                     <span class="link-line">Book a call</span>
                     <x-phosphor-arrow-up-right-thin class="size-[0.8em] transition-transform duration-700 ease-expo group-hover:rotate-45" aria-hidden="true" />
                 </a>
+
+                @if (config('agency.email') || config('agency.phone'))
+                    <ul class="mt-8 space-y-2.5 text-sm">
+                        @if (config('agency.email'))
+                            <li><a href="mailto:{{ config('agency.email') }}" class="link-line">{{ config('agency.email') }}</a></li>
+                        @endif
+                        @if (config('agency.phone'))
+                            <li><a href="tel:{{ preg_replace('/[^\d+]/', '', config('agency.phone')) }}" class="link-line tabular-nums">{{ config('agency.phone') }}</a></li>
+                        @endif
+                    </ul>
+                @endif
             </div>
 
             <nav class="md:col-span-2 md:col-start-8" aria-label="Footer">

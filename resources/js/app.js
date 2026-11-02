@@ -12,6 +12,7 @@ import { initCursor } from './modules/cursor';
 import { initMagnetic } from './modules/magnetic';
 import { initGoToTop, initScrollCue } from './modules/go-to-top';
 import { initEmbeds } from './modules/embeds';
+import { initLogoPortfolio } from './modules/logo-portfolio';
 
 // Registers the fonts with Vite's manifest so the layout can preload them via Vite::asset().
 import.meta.glob(['../fonts/**']);
@@ -33,6 +34,7 @@ initMagnetic();
 initGoToTop();
 initScrollCue();
 initEmbeds();
+initLogoPortfolio();
 
 runPreloader(() => hero.playIntro()).then(() => {
     setScrollLocked(false);

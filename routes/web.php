@@ -30,3 +30,4 @@ Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap')
 Route::get('/robots.txt', [SitemapController::class, 'robots'])->name('robots');
 
 Route::view('noor-te-nakhra', 'noor-te-nakhra')->name('noor-te-nakhra');
+Route::view('logo-portfolio', 'logo-portfolio.index')->name('logo-portfolio');

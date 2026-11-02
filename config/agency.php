@@ -8,13 +8,16 @@ return [
     |--------------------------------------------------------------------------
     |
     | Contact details render only when set, so no placeholder email or booking
-    | link ever reaches the page. They also feed the Organization schema.
+    | link ever reaches the page. They also feed the Organization schema. The
+    | studio's own email and phone are the defaults; the env can override them.
     |
     */
 
     'name' => 'The Ordinary Agency',
 
-    'email' => env('AGENCY_EMAIL'),
+    'email' => env('AGENCY_EMAIL', 'hello@theordinaryagency.com'),
+
+    'phone' => env('AGENCY_PHONE', '+91 99744 57275'),
 
     'booking_url' => env('AGENCY_BOOKING_URL'),
 

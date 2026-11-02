@@ -82,3 +82,41 @@ test('article markdown is rendered with raw HTML escaped', function () {
         ->assertSee('<h2>Heading</h2>', false)
         ->assertDontSee('<script>alert(1)</script>', false);
 });
+
+test('the logo portfolio is reachable by link only and never indexed', function () {
+    $this->get(route('logo-portfolio'))
+        ->assertOk()
+        ->assertSee('<meta name="robots" content="noindex, nofollow">', false)
+        ->assertSee('Logos that')
+        ->assertDontSee('Prepared for');
+
+    $this->app['env'] = 'production';
+
+    $this->get(route('logo-portfolio'))->assertSee('<meta name="robots" content="noindex, nofollow">', false);
+    $this->get(route('sitemap'))->assertDontSee(route('logo-portfolio'));
+});
+
+test('the logo portfolio is personalised for a lead with the input escaped', function () {
+    $this->get(route('logo-portfolio', ['for' => 'Acme Co']))
+        ->assertOk()
+        ->assertSee('Prepared for Acme Co')
+        ->assertSee('Let’s build the mark for Acme Co.');
+
+    $this->get(route('logo-portfolio', ['for' => '<script>alert(1)</script>']))
+        ->assertOk()
+        ->assertSee('&lt;script&gt;', false)
+        ->assertDontSee('<script>alert(1)</script>', false);
+});
+
+test('the studio email and phone link from the contact page, footer and schema', function () {
+    config(['agency.email' => 'hello@theordinaryagency.com', 'agency.phone' => '+91 99744 57275']);
+
+    $this->get(route('contact'))
+        ->assertOk()
+        ->assertSee('href="mailto:hello@theordinaryagency.com"', false)
+        ->assertSee('href="tel:+919974457275"', false)
+        ->assertSee('"telephone":"+91 99744 57275"', false);
+
+    $this->get(route('about'))
+        ->assertSee('href="tel:+919974457275"', false);
+});

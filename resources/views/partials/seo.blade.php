@@ -15,6 +15,7 @@
         'url' => url('/'),
         'logo' => asset('img/logo/logo-light.png'),
         'email' => config('agency.email'),
+        'telephone' => config('agency.phone'),
         'sameAs' => array_values(config('agency.social')) ?: null,
     ]);
 

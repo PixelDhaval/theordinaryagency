@@ -5,6 +5,7 @@
 
 @php
     $email = config('agency.email');
+    $phone = config('agency.phone');
     $bookingUrl = config('agency.booking_url');
     $social = config('agency.social');
     $services = \App\Support\ServiceCatalog::all()->pluck('name');
@@ -115,7 +116,7 @@
                     A short, no-pressure call to understand what you’re working on and whether we’re the right fit.
                 </p>
 
-                @if ($bookingUrl || $email || $social)
+                @if ($bookingUrl || $email || $phone || $social)
                     <div class="mt-16 space-y-8">
                         <x-eyebrow class="text-fg-muted" data-reveal>Prefer to reach out directly?</x-eyebrow>
                         @if ($bookingUrl)
@@ -128,6 +129,12 @@
                             <a data-reveal href="mailto:{{ $email }}" class="group flex items-center justify-between gap-4 border-b border-ink pb-4">
                                 <span class="break-all text-h3 font-medium">{{ $email }}</span>
                                 <x-phosphor-envelope-simple-thin class="size-6 shrink-0" aria-hidden="true" />
+                            </a>
+                        @endif
+                        @if ($phone)
+                            <a data-reveal href="tel:{{ preg_replace('/[^\d+]/', '', $phone) }}" class="group flex items-center justify-between gap-4 border-b border-ink pb-4">
+                                <span class="text-h3 font-medium tabular-nums">{{ $phone }}</span>
+                                <x-phosphor-phone-thin class="size-6 shrink-0" aria-hidden="true" />
                             </a>
                         @endif
                         @if ($social)
