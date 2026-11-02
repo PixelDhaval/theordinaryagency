@@ -28,7 +28,6 @@
         ['slug' => 'accviz', 'name' => 'AccViz', 'sector' => null, 'type' => 'combination', 'width' => 858, 'height' => 195],
         ['slug' => 'sark-shipping', 'name' => 'SARK Shipping Services', 'sector' => 'Shipping & logistics', 'type' => 'pictorial', 'width' => 670, 'height' => 610],
         ['slug' => 'palak-bakers', 'name' => 'Palak Bakers', 'sector' => 'Bakery', 'type' => 'wordmark', 'width' => 709, 'height' => 463],
-        ['slug' => 'ads-vizion', 'name' => 'ADS Vizion', 'sector' => null, 'type' => 'lettermark', 'width' => 1400, 'height' => 734],
         ['slug' => 'dr-pooja-belani', 'name' => 'Dr Pooja Belani', 'sector' => 'Healthcare', 'type' => 'pictorial', 'width' => 849, 'height' => 820],
         ['slug' => 'svadistha', 'name' => 'Svadistha', 'sector' => null, 'type' => 'combination', 'width' => 1400, 'height' => 452, 'tone' => 'dark'],
         ['slug' => 'kashyap-shipping', 'name' => 'Kashyap Shipping', 'sector' => 'Shipping', 'type' => 'pictorial', 'width' => 1001, 'height' => 347],
@@ -68,7 +67,7 @@
         ['vansh-maritime-mark', 446, 354], ['prana-studio-mark', 393, 275], ['globelink-mark', 340, 390],
         ['lavish-living-mark', 297, 297], ['ahir-fuels-mark', 873, 599], ['accviz-mark', 225, 195],
         ['sark-shipping', 670, 610], ['svadistha-leaf', 535, 547], ['vansh-exim', 698, 294],
-        ['sr-tradeline', 899, 552], ['palak-bakers', 709, 463], ['ads-vizion', 1400, 734],
+        ['sr-tradeline', 899, 552], ['palak-bakers', 709, 463],
     ];
 
     $appIcons = [
